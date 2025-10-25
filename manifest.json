@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "CMC Easy Login",
+  "author": "Yamada MK",
+  "version": "1.0",
+  "description": "Auto-fill and submit CMC captive portal login.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://securelogin.arubanetworks.com/*"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://securelogin.arubanetworks.com/*"],
+      "js": ["runner.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
