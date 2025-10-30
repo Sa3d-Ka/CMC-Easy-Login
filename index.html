@@ -18,10 +18,16 @@
         color: #333;
       }
 
+      .logoDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
       h2 {
         font-size: 1.2rem;
         margin-bottom: 1rem;
-        text-align: center;
         color: #2f3640;
       }
 
@@ -59,7 +65,7 @@
         margin-top: 10px;
         border: none;
         border-radius: 4px;
-        background-color: #273c75;
+        background-color: #2B9CB8;
         color: #fff;
         font-size: 0.9rem;
         cursor: pointer;
@@ -67,7 +73,7 @@
       }
 
       button:hover {
-        background-color: #192a56;
+        background-color: #248ba5;
       }
 
       #status {
@@ -80,10 +86,18 @@
       label input[type="checkbox"] + span {
         font-size: 0.85rem;
       }
+
+      input[type="checkbox"] {
+  accent-color: #007bff; /* Blue */
+}
     </style>
   </head>
   <body>
-    <h2>CMC Auto Login</h2>
+
+    <div class="logoDiv">
+      <img src="image1.png" alt="logo" width="55">
+      <h2>CMC Auto Login</h2>
+    </div>
 
     <label
       >Your CEF:
