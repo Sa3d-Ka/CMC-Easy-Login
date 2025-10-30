@@ -4,33 +4,57 @@
     <meta charset="utf-8" />
     <title>CMC Auto Login</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+	      
 
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        padding: 1rem;
-        width: 250px;
-        background: #f5f6fa;
-        color: #333;
-      }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-      h2 {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-        text-align: center;
-        color: #2f3640;
-      }
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1.5rem;
+  width: 280px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+}	
 
-      label {
-        width: 100%;
-        margin-bottom: 0.5rem;
-        font-size: 0.9rem;
-      }
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+ 		 color: #fff;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in;
+}
 
+label {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.7rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #f5f6fa;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
       input[type="text"],
       input[type="password"] {
         width: 100%;
